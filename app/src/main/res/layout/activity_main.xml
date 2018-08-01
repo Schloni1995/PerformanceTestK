@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="String" />
+
+    <Button
+        android:id="@+id/btn_build"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Build" />
+
+    <Button
+        android:id="@+id/btn_concat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Concat" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cpu" />
+
+    <Button
+        android:id="@+id/btn_cpueater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CPUeater" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Maths" />
+
+    <Button
+        android:id="@+id/btn_leipnitz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leipnitz" />
+
+    <Button
+        android:id="@+id/btn_ackermann"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ackermann" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prime" />
+
+    <Button
+        android:id="@+id/btn_miller_rabin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Miller-Rabin" />
+
+    <Button
+        android:id="@+id/btn_eratosthenes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eratostenes" />
+</LinearLayout>

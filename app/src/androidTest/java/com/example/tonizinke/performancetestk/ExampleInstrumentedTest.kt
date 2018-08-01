@@ -1,4 +1,4 @@
-package com.example.tonizinke.performancetestj
+package com.example.tonizinke.performancetestk
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

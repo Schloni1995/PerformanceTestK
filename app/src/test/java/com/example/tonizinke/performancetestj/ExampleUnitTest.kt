@@ -1,4 +1,4 @@
-package com.example.tonizinke.performancetestj
+package com.example.tonizinke.performancetestk
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

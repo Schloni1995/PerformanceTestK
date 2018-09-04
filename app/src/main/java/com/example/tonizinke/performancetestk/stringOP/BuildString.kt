@@ -1,21 +1,31 @@
 package com.example.tonizinke.performancetestk.stringOP
 
-class BuildString(private val o: Int) : Runnable {
+class BuildString(private val o: Int) {
     internal var start: Long = 0
-    /** @return the sbTime
-     */
     var sbTime: Long = 0
+    private var sb = StringBuilder()
 
+    init {
+        doWarmUp()
+        doTest()
+    }
 
-    override fun run() {
+    private fun doWarmUp() {
+        android.util.Log.d("Warmup", "warmUp gestartet")
+        for (j in 0..19) testOp()
+        android.util.Log.d("Warmup", "warmUp beendet")
+    }
+
+    private fun doTest() {
         start = System.currentTimeMillis()
-//        start = System.nanoTime()
-        val sb = StringBuilder()
+        sb = StringBuilder()
+        testOp()
+        sbTime = System.currentTimeMillis() - start
+    }
+
+    private fun testOp() {
         for (i in 0 until o)
             sb.append(i)
-        // System.out.println(sb.toString());
         val s = sb.toString()
-        sbTime = System.currentTimeMillis() - start
-//        sbTime = System.nanoTime() - start
     }
 }

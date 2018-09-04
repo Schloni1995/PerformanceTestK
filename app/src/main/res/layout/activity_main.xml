@@ -1,74 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView5"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="String" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_build"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Build" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="String" />
 
-    <Button
-        android:id="@+id/btn_concat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Concat" />
+        <Button
+            android:id="@+id/btn_build"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Build" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Cpu" />
+        <Button
+            android:id="@+id/btn_concat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Concat" />
 
-    <Button
-        android:id="@+id/btn_cpueater"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CPUeater" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maths" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Maths" />
+        <Button
+            android:id="@+id/btn_leipnitz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leipnitz" />
 
-    <Button
-        android:id="@+id/btn_leipnitz"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Leipnitz" />
+        <Button
+            android:id="@+id/btn_fibonacci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fibonacci" />
 
-    <Button
-        android:id="@+id/btn_ackermann"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ackermann" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prime" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Prime" />
+        <Button
+            android:id="@+id/btn_eratosthenes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eratostenes" />
 
-    <Button
-        android:id="@+id/btn_miller_rabin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Miller-Rabin" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sorts" />
 
-    <Button
-        android:id="@+id/btn_eratosthenes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Eratostenes" />
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_bubblesort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bubblesort" />
+
+        <Button
+            android:id="@+id/btn_insertionsort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insertionsort" />
+
+        <Button
+            android:id="@+id/btn_mergesort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mergesort" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cpu" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CPUeater" />
+
+    </LinearLayout>
+</ScrollView>

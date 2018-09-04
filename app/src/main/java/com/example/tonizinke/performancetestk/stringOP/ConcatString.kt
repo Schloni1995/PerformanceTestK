@@ -1,19 +1,28 @@
 package com.example.tonizinke.performancetestk.stringOP
 
-class ConcatString(private val o: Int) : Runnable {
+class ConcatString(private val o: Int) {
     internal var start: Long = 0
-    /** @return the conTime
-     */
     var conTime: Long = 0
 
+    init {
+        doWarmUp()
+        doTest()
+    }
 
-    override fun run() {
-        start = System.currentTimeMillis()
+    private fun doWarmUp() {
+        android.util.Log.d("Warmup", "warmUp gestartet")
+        for (j in 0..19) testOp()
+        android.util.Log.d("Warmup", "warmUp beendet")
+    }
+
+    private fun testOp() {
         var s = ""
-        for (i in 0 until o) {
-            s += i
-        }
-        // System.out.println(s);
+        for (i in 0 until o) s += i
+    }
+
+    private fun doTest() {
+        start = System.currentTimeMillis()
+        testOp()
         conTime = System.currentTimeMillis() - start
     }
 }
